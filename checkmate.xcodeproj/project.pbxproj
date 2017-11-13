@@ -17,7 +17,7 @@
 		C86A33391FB9662A00352600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86A33371FB9662A00352600 /* LaunchScreen.storyboard */; };
 		C86A33441FB9662A00352600 /* checkmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A33431FB9662A00352600 /* checkmateTests.swift */; };
 		C86A334F1FB9662A00352600 /* checkmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A334E1FB9662A00352600 /* checkmateUITests.swift */; };
-		C86A335D1FB9671000352600 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C86A335C1FB9671000352600 /* GoogleService-Info-2.plist */; };
+		C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C86A335C1FB9671000352600 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		C86A334A1FB9662A00352600 /* checkmateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checkmateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86A334E1FB9662A00352600 /* checkmateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkmateUITests.swift; sourceTree = "<group>"; };
 		C86A33501FB9662A00352600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C86A335C1FB9671000352600 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		C86A335C1FB9671000352600 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAF055013C58E9C13721ED26 /* Pods-checkmateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECF8FFEF5410084824330827 /* Pods-checkmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,11 +139,11 @@
 		C86A332D1FB9662A00352600 /* checkmate */ = {
 			isa = PBXGroup;
 			children = (
+				C86A335C1FB9671000352600 /* GoogleService-Info.plist */,
 				C86A332E1FB9662A00352600 /* AppDelegate.swift */,
 				C86A33301FB9662A00352600 /* ViewController.swift */,
 				C86A33321FB9662A00352600 /* Main.storyboard */,
 				C86A33351FB9662A00352600 /* Assets.xcassets */,
-				C86A335C1FB9671000352600 /* GoogleService-Info-2.plist */,
 				C86A33371FB9662A00352600 /* LaunchScreen.storyboard */,
 				C86A333A1FB9662A00352600 /* Info.plist */,
 			);
@@ -286,7 +286,7 @@
 			files = (
 				C86A33391FB9662A00352600 /* LaunchScreen.storyboard in Resources */,
 				C86A33361FB9662A00352600 /* Assets.xcassets in Resources */,
-				C86A335D1FB9671000352600 /* GoogleService-Info-2.plist in Resources */,
+				C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */,
 				C86A33341FB9662A00352600 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
