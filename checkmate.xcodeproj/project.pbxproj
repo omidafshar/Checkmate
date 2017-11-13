@@ -11,7 +11,7 @@
 		875FA4DA85D5FD5C006EB462 /* Pods_checkmateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */; };
 		BEB37C20E05E9599FE6EB964 /* Pods_checkmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEC460F91C923AFB603D37 /* Pods_checkmate.framework */; };
 		C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A332E1FB9662A00352600 /* AppDelegate.swift */; };
-		C86A33311FB9662A00352600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A33301FB9662A00352600 /* ViewController.swift */; };
+		C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A33301FB9662A00352600 /* WelcomeScreenViewController.swift */; };
 		C86A33341FB9662A00352600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86A33321FB9662A00352600 /* Main.storyboard */; };
 		C86A33361FB9662A00352600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86A33351FB9662A00352600 /* Assets.xcassets */; };
 		C86A33391FB9662A00352600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86A33371FB9662A00352600 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		BAC2F656C8034B2B93C08389 /* Pods-checkmateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C86A332B1FB9662A00352600 /* checkmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86A332E1FB9662A00352600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C86A33301FB9662A00352600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C86A33301FB9662A00352600 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		C86A33331FB9662A00352600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C86A33351FB9662A00352600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86A33381FB9662A00352600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,6 +114,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C804A7B11FB9715C00F7DF6D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86A33301FB9662A00352600 /* WelcomeScreenViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C804A7B21FB9718E00F7DF6D /* App Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				C86A332E1FB9662A00352600 /* AppDelegate.swift */,
+			);
+			path = "App Utilites";
+			sourceTree = "<group>";
+		};
+		C804A7B31FB971C500F7DF6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C86A33221FB9662A00352600 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +162,14 @@
 		C86A332D1FB9662A00352600 /* checkmate */ = {
 			isa = PBXGroup;
 			children = (
-				C86A335C1FB9671000352600 /* GoogleService-Info.plist */,
-				C86A332E1FB9662A00352600 /* AppDelegate.swift */,
-				C86A33301FB9662A00352600 /* ViewController.swift */,
+				C804A7B31FB971C500F7DF6D /* Model */,
+				C804A7B21FB9718E00F7DF6D /* App Utilites */,
 				C86A33321FB9662A00352600 /* Main.storyboard */,
 				C86A33351FB9662A00352600 /* Assets.xcassets */,
+				C804A7B11FB9715C00F7DF6D /* View Controller */,
 				C86A33371FB9662A00352600 /* LaunchScreen.storyboard */,
 				C86A333A1FB9662A00352600 /* Info.plist */,
+				C86A335C1FB9671000352600 /* GoogleService-Info.plist */,
 			);
 			path = checkmate;
 			sourceTree = "<group>";
@@ -464,7 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86A33311FB9662A00352600 /* ViewController.swift in Sources */,
+				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
 				C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
