@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
+import ChameleonFramework
 class SignUpStepOneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor.clear
         /// Constructing the background layer \\\
         let gradientlayer = CAGradientLayer()
         gradientlayer.frame = self.view.frame

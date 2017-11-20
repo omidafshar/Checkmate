@@ -14,6 +14,15 @@ class SignUpStepFourViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.clear
+        /// Constructing the background layer \\\
+        let gradientlayer = CAGradientLayer()
+        gradientlayer.frame = self.view.frame
+        gradientlayer.colors = [UIColor.flatOrangeDark.cgColor, UIColor.flatNavyBlue.cgColor,UIColor(red: 70/255.5, green: 146/255.5, blue: 150/255.5, alpha: 1.0).cgColor ]
+        gradientlayer.locations = [0.0, 0.6, 1.0]
+        gradientlayer.startPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientlayer.endPoint = CGPoint(x: 0.0, y: 0.0)
+        self.view.layer.insertSublayer(gradientlayer, at: 0)
     }
 
     override func didReceiveMemoryWarning() {
