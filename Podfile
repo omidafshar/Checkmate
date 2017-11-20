@@ -7,6 +7,7 @@ target 'checkmate' do
 
   # Pods for checkmate
   pod 'Firebase/Core'
+  pod 'ChameleonFramework', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4'
 
   target 'checkmateTests' do
     inherit! :search_paths

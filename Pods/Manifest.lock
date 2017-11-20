@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - Firebase/Core (4.5.0):
     - FirebaseAnalytics (= 4.0.4)
     - FirebaseCore (= 4.0.10)
@@ -21,9 +24,21 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - ChameleonFramework (from `https://github.com/ViccAlexander/Chameleon.git`, branch `wip/swift4`)
   - Firebase/Core
 
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: wip/swift4
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: db432ca1b1a3d8f83ee1f881208c0c960a325e73
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
@@ -31,6 +46,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 86ff8c9d44a9989ba7ef7ade20d416788cbcb95f
+PODFILE CHECKSUM: 2a05ed8a4e20ddeb6eb005c0dd0de3e574a95e08
 
 COCOAPODS: 1.3.1

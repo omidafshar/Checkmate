@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19126688BE9F52727C0B82CB739CD663"
+               BlueprintIdentifier = "CF76105C748446FCEE8F6828AFEF09D4"
                BuildableName = "Pods_checkmate.framework"
                BlueprintName = "Pods-checkmate"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19126688BE9F52727C0B82CB739CD663"
+            BlueprintIdentifier = "CF76105C748446FCEE8F6828AFEF09D4"
             BuildableName = "Pods_checkmate.framework"
             BlueprintName = "Pods-checkmate"
             ReferencedContainer = "container:Pods.xcodeproj">

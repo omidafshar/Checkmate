@@ -18,6 +18,10 @@
 		C86A33441FB9662A00352600 /* checkmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A33431FB9662A00352600 /* checkmateTests.swift */; };
 		C86A334F1FB9662A00352600 /* checkmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A334E1FB9662A00352600 /* checkmateUITests.swift */; };
 		C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C86A335C1FB9671000352600 /* GoogleService-Info.plist */; };
+		C89924A61FC26BAA00034EF5 /* SignUpStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89924A51FC26BAA00034EF5 /* SignUpStepOneViewController.swift */; };
+		C89924A81FC26BBE00034EF5 /* SignUpStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89924A71FC26BBE00034EF5 /* SignUpStepTwoViewController.swift */; };
+		C89924AA1FC26BD400034EF5 /* SignUpStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89924A91FC26BD400034EF5 /* SignUpStepThreeViewController.swift */; };
+		C89924AC1FC26BF300034EF5 /* SignUpStepFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89924AB1FC26BF300034EF5 /* SignUpStepFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		C86A334E1FB9662A00352600 /* checkmateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkmateUITests.swift; sourceTree = "<group>"; };
 		C86A33501FB9662A00352600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C86A335C1FB9671000352600 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C89924A51FC26BAA00034EF5 /* SignUpStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStepOneViewController.swift; sourceTree = "<group>"; };
+		C89924A71FC26BBE00034EF5 /* SignUpStepTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStepTwoViewController.swift; sourceTree = "<group>"; };
+		C89924A91FC26BD400034EF5 /* SignUpStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStepThreeViewController.swift; sourceTree = "<group>"; };
+		C89924AB1FC26BF300034EF5 /* SignUpStepFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStepFourViewController.swift; sourceTree = "<group>"; };
 		EAF055013C58E9C13721ED26 /* Pods-checkmateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECF8FFEF5410084824330827 /* Pods-checkmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +125,10 @@
 		C804A7B11FB9715C00F7DF6D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C89924A51FC26BAA00034EF5 /* SignUpStepOneViewController.swift */,
+				C89924A71FC26BBE00034EF5 /* SignUpStepTwoViewController.swift */,
+				C89924A91FC26BD400034EF5 /* SignUpStepThreeViewController.swift */,
+				C89924AB1FC26BF300034EF5 /* SignUpStepFourViewController.swift */,
 				C86A33301FB9662A00352600 /* WelcomeScreenViewController.swift */,
 			);
 			path = "View Controller";
@@ -420,11 +432,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-checkmate/Pods-checkmate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -488,7 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89924A81FC26BBE00034EF5 /* SignUpStepTwoViewController.swift in Sources */,
+				C89924A61FC26BAA00034EF5 /* SignUpStepOneViewController.swift in Sources */,
+				C89924AA1FC26BD400034EF5 /* SignUpStepThreeViewController.swift in Sources */,
 				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
+				C89924AC1FC26BF300034EF5 /* SignUpStepFourViewController.swift in Sources */,
 				C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
