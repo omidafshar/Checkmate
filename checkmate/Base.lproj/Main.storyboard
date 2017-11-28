@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rSX-Xb-uFj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,9 +54,6 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" red="0.97916666669999997" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="rSX-Xb-uFj" kind="show" id="9zx-Lr-tLQ"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fte-Ca-hxq">
                                         <rect key="frame" x="0.0" y="374" width="375" height="60"/>
@@ -134,9 +131,6 @@
                                 <rect key="frame" x="312" y="7" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="SignButtonPressed:" destination="958-6D-MW0" eventType="touchUpInside" id="ESL-3z-wj9"/>
-                                </connections>
                             </button>
                             <connections>
                                 <segue destination="2UO-3F-BQB" kind="show" identifier="WelcomeToSignIn" id="ICL-yc-X4C"/>
@@ -420,7 +414,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25n-8D-brc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="916"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="960"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5T-fW-6R0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
@@ -461,6 +455,9 @@
                                                         <state key="normal" title="Basic">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="basicButtonPressed:" destination="rSX-Xb-uFj" eventType="touchUpInside" id="9pL-au-SDS"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3Z-U1-0YP">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
@@ -472,6 +469,9 @@
                                                         <state key="normal" title="Premium">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="premiumButtonPressed:" destination="rSX-Xb-uFj" eventType="touchUpInside" id="Qsb-Ww-Dm1"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -677,6 +677,9 @@
                                                 <state key="normal" title="Join CheckMate">
                                                     <color key="titleColor" red="0.99561183880000004" green="1" blue="0.98276059989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpButtonPressed:" destination="rSX-Xb-uFj" eventType="touchUpInside" id="x0Y-V1-hs6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -726,6 +729,14 @@
                         <viewLayoutGuide key="safeArea" id="4DQ-99-XUG"/>
                     </view>
                     <size key="freeformSize" width="375" height="980"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="n9r-vu-QHK" id="OBY-kO-6yH"/>
+                        <outlet property="emailTextField" destination="AeW-wP-TXS" id="QLZ-pb-YgK"/>
+                        <outlet property="firstNameTextField" destination="er3-xK-ifO" id="DAv-Zv-ZdQ"/>
+                        <outlet property="lastNameTextField" destination="o3b-1V-LUT" id="iCD-IA-AnF"/>
+                        <outlet property="passwordTextField" destination="kau-bN-X0y" id="OGt-W8-bqr"/>
+                        <outlet property="phoneNumberTextField" destination="6ux-eZ-0Qi" id="wAa-Nn-Dba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHb-eS-5fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

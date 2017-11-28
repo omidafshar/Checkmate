@@ -7,6 +7,9 @@ target 'checkmate' do
 
   # Pods for checkmate
   pod 'Firebase/Core'
+  pod 'FirebaseAuth'
+  pod 'FirebaseStorage'
+  pod 'FirebaseDatabase'
   pod 'ChameleonFramework', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4'
 
   target 'checkmateTests' do
