@@ -55,14 +55,14 @@
                                             <color key="titleColor" red="0.97916666669999997" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Sq-kF-Dj1" kind="show" id="eOC-oW-tMe"/>
+                                            <segue destination="9Sq-kF-Dj1" kind="show" identifier="WelcomeToSignUpOne" id="eOC-oW-tMe"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fte-Ca-hxq">
                                         <rect key="frame" x="0.0" y="374" width="375" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akd-4c-JVd">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="60"/>
+                                                <rect key="frame" x="0.0" y="10.5" width="119.5" height="39"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="C7L-jw-8b2"/>
                                                 </constraints>
@@ -84,7 +84,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-Rb-25r">
-                                                <rect key="frame" x="255.5" y="10.5" width="119.5" height="39"/>
+                                                <rect key="frame" x="255.5" y="0.0" width="119.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="8eb-SU-TTM"/>
                                                 </constraints>
@@ -138,11 +138,14 @@
                                     <action selector="SignButtonPressed:" destination="958-6D-MW0" eventType="touchUpInside" id="adv-4V-Q3c"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <segue destination="CyK-hK-WoV" kind="show" identifier="WelcomeToSignIn" id="nNh-Nb-Si9"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="InformationText" destination="ymf-DO-fOj" id="ItO-nD-8J6"/>
-                        <outlet property="WelcomeScreenView" destination="Gdf-w6-tMo" id="4Vn-fx-S7g"/>
+                        <outlet property="WelcomeScreenView" destination="Gdf-w6-tMo" id="Acn-gh-LQ6"/>
                         <outlet property="checkMateTeam" destination="qOP-9I-yrU" id="a9a-Xw-mWB"/>
                     </connections>
                 </viewController>
@@ -267,7 +270,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W1c-Be-Std" kind="show" id="VU2-js-0sk"/>
+                                    <segue destination="W1c-Be-Std" kind="show" identifier="SignUpOneToSignUpTwo" id="VU2-js-0sk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -742,7 +745,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="king" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-8o-Pnd">
-                                <rect key="frame" x="80" y="40" width="211" height="343"/>
+                                <rect key="frame" x="80" y="84" width="211" height="299"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bf5-gs-91m">
                                 <rect key="frame" x="51" y="434" width="268" height="30"/>

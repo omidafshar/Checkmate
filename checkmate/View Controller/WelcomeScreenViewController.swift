@@ -17,17 +17,11 @@ class WelcomeScreenViewController: UIViewController {
         performSegue(withIdentifier: "WelcomeToSignIn", sender: self)
     }
     
-//    @IBAction func signUpButtonPressed(_ sender: Any) {
-//        performSegue(withIdentifier: "WelcomeToSignUp", sender: self)
-//    }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let identifier: String? = segue.identifier
         if identifier != nil {
             if identifier! == "WelcomeToSignIn" {
-                
-            } else if identifier == "WelcomeToSignUp" {
                 
             } else {
                 print("Incorrect Segue Identifier")
