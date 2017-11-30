@@ -62,7 +62,7 @@
                                         <rect key="frame" x="0.0" y="374" width="375" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akd-4c-JVd">
-                                                <rect key="frame" x="0.0" y="10.5" width="119.5" height="39"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="C7L-jw-8b2"/>
                                                 </constraints>
@@ -84,7 +84,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-Rb-25r">
-                                                <rect key="frame" x="255.5" y="0.0" width="119.5" height="60"/>
+                                                <rect key="frame" x="255.5" y="10.5" width="119.5" height="39"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="8eb-SU-TTM"/>
                                                 </constraints>
@@ -736,10 +736,10 @@
             </objects>
             <point key="canvasLocation" x="-5022" y="2351"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="wHV-zV-sc2">
             <objects>
-                <viewController id="CyK-hK-WoV" sceneMemberID="viewController">
+                <viewController id="CyK-hK-WoV" customClass="SignInViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDe-Gl-ahe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -759,15 +759,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-vB-HIF">
-                                <rect key="frame" x="108" y="594" width="157" height="30"/>
-                                <state key="normal" title="Forgot your Password?"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5w-wk-ZT8">
                                 <rect key="frame" x="165" y="550" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="CyK-hK-WoV" eventType="touchUpInside" id="0WV-YV-h6R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7p-vB-HIF">
+                                <rect key="frame" x="108" y="594" width="157" height="30"/>
+                                <state key="normal" title="Forgot your Password?"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheckMate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oma-rz-aKV">
                                 <rect key="frame" x="143" y="391" width="89" height="21"/>
@@ -800,6 +803,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g0F-l2-z84"/>
                     </view>
+                    <connections>
+                        <outlet property="forgotPasswordButtonPressed" destination="N7p-vB-HIF" id="Q6E-rM-8cL"/>
+                        <outlet property="mainImage" destination="Y6K-8o-Pnd" id="iLf-Tz-YSl"/>
+                        <outlet property="passwordInput" destination="gg3-dy-8q6" id="Wt6-f6-4Xx"/>
+                        <outlet property="usernameInput" destination="bf5-gs-91m" id="c4o-EF-CWy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unq-kl-xbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
