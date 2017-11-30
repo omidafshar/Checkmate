@@ -8,6 +8,7 @@
 
 import UIKit
 import ChameleonFramework
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
     
@@ -22,6 +23,32 @@ class SignInViewController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         
+        guard let email = emailInput.text else { return }
+        guard let password = passwordInput.text else { return }
+        
+        if email == "" || password == "" {
+            //Alert to tell the user that there was an error because they didn't fill anything in the fields
+            let alertController = UIAlertController(title: "Log In Error", message: "Please enter a valid email and password.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        } else {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if (error != nil) {
+                    let alertController = UIAlertController(title: "Log In Error", message:
+                        error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                } else {
+                    // self.performSegue(withIdentifier: segueLogInToMainPage, sender: self)
+                    let alertController = UIAlertController(title: "Response", message: "Signed in!", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
         
     }
     
