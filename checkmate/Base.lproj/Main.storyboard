@@ -466,6 +466,57 @@
             </objects>
             <point key="canvasLocation" x="-3218" y="1174"/>
         </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="BCc-Ta-UYs">
+            <objects>
+                <viewController id="lYe-mx-gtV" customClass="userProfileViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEF-13-UKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DIVI (6 of 15) - Divi Kumar copy" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-kC-7ij">
+                                <rect key="frame" x="67" y="74" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Ovc-wf-KTU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kD-oi-Sju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2367" y="1174"/>
+        </scene>
+        <!--User Settings View Controller-->
+        <scene sceneID="eVr-ZG-JQc">
+            <objects>
+                <viewController id="EVl-9Z-1jN" customClass="userSettingsViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uns-C4-wIh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2zV-0A-leH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1EH-mp-8wI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1545" y="1177"/>
+        </scene>
+        <!--Check History View Controller-->
+        <scene sceneID="KXm-93-doq">
+            <objects>
+                <viewController id="Liv-WJ-UHc" customClass="checkHistoryViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sas-uz-lW3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dcJ-kn-tPM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDf-Wh-uyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="1181"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="N35-NX-gSX">
             <objects>
@@ -866,6 +917,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DIVI (6 of 15) - Divi Kumar copy" width="1389" height="1512"/>
         <image name="about-1" width="175" height="185"/>
         <image name="cancel-1" width="150" height="133"/>
         <image name="king" width="320" height="640"/>

@@ -21,6 +21,9 @@
 		C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C86A335C1FB9671000352600 /* GoogleService-Info.plist */; };
 		C8ECD2251FCFBA1200063A33 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */; };
 		C8ECD2271FCFBBD900063A33 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */; };
+		C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */; };
+		C8ECD22B1FCFDAB600063A33 /* userSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD22A1FCFDAB600063A33 /* userSettingsViewController.swift */; };
+		C8ECD22D1FCFDB5E00063A33 /* checkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		C86A335C1FB9671000352600 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1ViewController.swift; sourceTree = "<group>"; };
+		C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
+		C8ECD22A1FCFDAB600063A33 /* userSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettingsViewController.swift; sourceTree = "<group>"; };
+		C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkHistoryViewController.swift; sourceTree = "<group>"; };
 		EAF055013C58E9C13721ED26 /* Pods-checkmateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECF8FFEF5410084824330827 /* Pods-checkmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +129,9 @@
 		C804A7B11FB9715C00F7DF6D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */,
+				C8ECD22A1FCFDAB600063A33 /* userSettingsViewController.swift */,
+				C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */,
 				C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */,
 				C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */,
 				C814F4BE1FC525A700306B42 /* SignUpStep2ViewController.swift */,
@@ -503,8 +512,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ECD22B1FCFDAB600063A33 /* userSettingsViewController.swift in Sources */,
 				C814F4C01FC525AB00306B42 /* SignUpStep2ViewController.swift in Sources */,
+				C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */,
 				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
+				C8ECD22D1FCFDB5E00063A33 /* checkHistoryViewController.swift in Sources */,
 				C8ECD2251FCFBA1200063A33 /* SignInViewController.swift in Sources */,
 				C8ECD2271FCFBBD900063A33 /* SignUpStep1ViewController.swift in Sources */,
 				C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */,
