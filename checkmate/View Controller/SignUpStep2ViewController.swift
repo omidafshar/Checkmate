@@ -66,6 +66,11 @@ class SignUpStepTwoViewController: UIViewController {
             alertController.addAction(defaultAction)
             present(alertController, animated: true, completion: nil)
             
+        } else if password != verifiedPassword {
+            let alertController = UIAlertController(title: "Password Error.", message: "Passwords do not match.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "Try Again", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
         } else {
             Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                 if error == nil {
@@ -87,7 +92,7 @@ class SignUpStepTwoViewController: UIViewController {
                             self.present(alertController, animated: true, completion: nil)
                         } else {
                             // self.performSegue(withIdentifier: segueSignUpToProfile, sender: self)
-                            let alertController = UIAlertController(title: "Signed up succesfully!", message: error?.localizedDescription, preferredStyle: .alert)
+                            let alertController = UIAlertController(title: "Signed up successfully!", message: error?.localizedDescription, preferredStyle: .alert)
                             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                             alertController.addAction(defaultAction)
                             self.present(alertController, animated: true, completion: nil)
