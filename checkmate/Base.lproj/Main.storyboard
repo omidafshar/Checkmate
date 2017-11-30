@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="-4017" y="314"/>
         </scene>
-        <!--Sign Up Step One View Controller-->
+        <!--Sign Up Step1 View Controller-->
         <scene sceneID="xF9-hJ-Xng">
             <objects>
-                <viewController id="9Sq-kF-Dj1" customClass="SignUpStepOneViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Sq-kF-Dj1" customClass="SignUpStep1ViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XSY-xh-MMp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,6 +197,9 @@
                                         <state key="normal" title="Basic">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="basicPlanButtonPressed:" destination="9Sq-kF-Dj1" eventType="touchUpInside" id="wEB-F2-Zoe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWk-VJ-C0A">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
@@ -208,6 +211,9 @@
                                         <state key="normal" title="Premium">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="premiumPlanButtonPressed:" destination="9Sq-kF-Dj1" eventType="touchUpInside" id="a02-G5-DzW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -270,7 +276,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W1c-Be-Std" kind="show" identifier="SignUpOneToSignUpTwo" id="VU2-js-0sk"/>
+                                    <action selector="continueButtonPressed:" destination="9Sq-kF-Dj1" eventType="touchUpInside" id="oG7-RL-Vau"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -292,6 +298,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H7z-lQ-YOp"/>
                     </view>
+                    <connections>
+                        <segue destination="W1c-Be-Std" kind="show" identifier="SignUpOneToSignUpTwo" id="JAL-bP-K6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jk-nt-k8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,7 +373,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-NG-cwQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFT-NG-cwQ">
                                         <rect key="frame" x="0.0" y="135" width="295" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -403,18 +412,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rNZ-aj-wKq"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tpf-PS-ilw"/>
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="PCm-eF-ynO" id="JT3-hF-Twc"/>
                         <outlet property="emailTextField" destination="CSh-Ot-u14" id="gnS-uA-kPn"/>
                         <outlet property="firstNameTextField" destination="zlM-Ds-vnr" id="uQB-tn-Xpu"/>
                         <outlet property="lastNameTextField" destination="K2R-BH-QLq" id="VAu-cD-1DL"/>
                         <outlet property="passwordTextField" destination="Rns-m8-WU7" id="rE4-Pp-nT4"/>
-                        <outlet property="phoneNumberTextField" destination="JFT-NG-cwQ" id="sSK-Oe-OFz"/>
+                        <outlet property="phoneNumberTextField" destination="JFT-NG-cwQ" id="cCa-ql-Xog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGl-Od-WGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3081" y="1175"/>
+            <point key="canvasLocation" x="-3218" y="1174"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="N35-NX-gSX">
@@ -747,7 +757,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="king" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-8o-Pnd">
                                 <rect key="frame" x="80" y="84" width="211" height="299"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bf5-gs-91m">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bf5-gs-91m">
                                 <rect key="frame" x="51" y="434" width="268" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -804,15 +814,15 @@
                         <viewLayoutGuide key="safeArea" id="g0F-l2-z84"/>
                     </view>
                     <connections>
+                        <outlet property="emailInput" destination="bf5-gs-91m" id="tGk-sK-OPv"/>
                         <outlet property="forgotPasswordButtonPressed" destination="N7p-vB-HIF" id="Q6E-rM-8cL"/>
                         <outlet property="mainImage" destination="Y6K-8o-Pnd" id="iLf-Tz-YSl"/>
                         <outlet property="passwordInput" destination="gg3-dy-8q6" id="Wt6-f6-4Xx"/>
-                        <outlet property="usernameInput" destination="bf5-gs-91m" id="c4o-EF-CWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unq-kl-xbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2934" y="313"/>
+            <point key="canvasLocation" x="-3217" y="313"/>
         </scene>
     </scenes>
     <resources>

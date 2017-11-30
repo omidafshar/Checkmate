@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SignUpStep1ViewController.swift
 //  checkmate
 //
 //  Created by Divi Kumar on 11/29/17.
@@ -7,30 +7,44 @@
 //
 
 import UIKit
-import ChameleonFramework
 
-class SignInViewController: UIViewController {
-    
-    @IBOutlet weak var mainImage: UIImageView!
-    
-    @IBOutlet weak var emailInput: UITextField!
-    
-    @IBOutlet weak var passwordInput: UITextField!
+class SignUpStep1ViewController: UIViewController {
+
+    var chosenPlan: String = ""
     
     
-    
-    
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        
-        
+    @IBAction func basicPlanButtonPressed(_ sender: Any) {
+        chosenPlan = "basic"
     }
     
     
-    @IBOutlet weak var forgotPasswordButtonPressed: UIButton!
+    @IBAction func premiumPlanButtonPressed(_ sender: Any) {
+        chosenPlan = "premium"
+    }
     
     
     
+    @IBAction func continueButtonPressed(_ sender: Any) {
+        if chosenPlan == "" {
+            let alertController = UIAlertController(title: "Invalid Selection.", message: "Please select a plan before continuing to the next step.", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "SignUpOneToSignUpTwo", sender: self)
+        }
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier != nil {
+            if segue.identifier == "SignUpOneToSignUpTwo" {
+                let dest = segue.destination as? SignUpStepTwoViewController
+                dest?.planType = chosenPlan
+            } else {
+                print("Invalid Segue. Check your code")
+            }
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -53,6 +67,8 @@ class SignInViewController: UIViewController {
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 
