@@ -35,6 +35,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DTo-jx-juL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-N9-NX7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
@@ -129,7 +132,7 @@
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-DO-fOj">
                                         <rect key="frame" x="0.0" y="482" width="375" height="77"/>
-                                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Welcome to the CheckMate community! On the next couple of screens we need to ask you a few personal questions so that we can perform the necessary checks to keep you safe. At SafetyKids our primary concern is your safety. Therefore, we can assure you that none of your information will be shared or seen by anybody. </string>
                                         <color key="textColor" red="0.99561183880000004" green="1" blue="0.98276059989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -159,11 +162,15 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="RFF-45-2zF" firstAttribute="bottom" secondItem="DTo-jx-juL" secondAttribute="bottom" id="00J-xA-Oiz"/>
+                            <constraint firstItem="DTo-jx-juL" firstAttribute="leading" secondItem="RFF-45-2zF" secondAttribute="leading" id="Bxh-qh-01R"/>
                             <constraint firstItem="Yv0-N9-NX7" firstAttribute="top" secondItem="RFF-45-2zF" secondAttribute="top" id="IgX-ob-WEu"/>
                             <constraint firstItem="RFF-45-2zF" firstAttribute="trailing" secondItem="Yv0-N9-NX7" secondAttribute="trailing" id="d5E-Fy-hAR"/>
                             <constraint firstItem="Yv0-N9-NX7" firstAttribute="leading" secondItem="RFF-45-2zF" secondAttribute="leading" id="gkK-Ue-vDp"/>
+                            <constraint firstItem="DTo-jx-juL" firstAttribute="top" secondItem="RFF-45-2zF" secondAttribute="top" id="hfH-fx-W0m"/>
+                            <constraint firstItem="RFF-45-2zF" firstAttribute="trailing" secondItem="DTo-jx-juL" secondAttribute="trailing" id="mEp-hM-fEw"/>
                             <constraint firstItem="RFF-45-2zF" firstAttribute="bottom" secondItem="Yv0-N9-NX7" secondAttribute="bottom" id="na7-hl-cPK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RFF-45-2zF"/>
@@ -201,6 +208,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-g6-d5I">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-3o-mM5">
                                 <rect key="frame" x="50" y="110" width="275" height="119.5"/>
                                 <subviews>
@@ -320,20 +330,28 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tpj-62-Q5I" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" constant="40" id="0mR-3Q-rzE"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="bottom" secondItem="H7z-lQ-YOp" secondAttribute="bottom" id="28P-FI-sD1"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="top" secondItem="H7z-lQ-YOp" secondAttribute="top" id="2Si-82-UoP"/>
                             <constraint firstItem="tpj-62-Q5I" firstAttribute="top" secondItem="FXj-HA-crN" secondAttribute="bottom" constant="40" id="2vB-3n-vvi"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" id="4DQ-Vs-iKJ"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="trailing" secondItem="H7z-lQ-YOp" secondAttribute="trailing" id="8V1-EV-Alf"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="bottom" secondItem="H7z-lQ-YOp" secondAttribute="bottom" id="AIa-DH-ByG"/>
                             <constraint firstItem="Jz0-3o-mM5" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" constant="50" id="I8I-f0-eBt"/>
                             <constraint firstItem="H7z-lQ-YOp" firstAttribute="trailing" secondItem="4qA-s8-w44" secondAttribute="trailing" id="QdF-y2-xUB"/>
                             <constraint firstItem="4qA-s8-w44" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" id="Qi1-jc-FLf"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" id="R2J-R4-h8k"/>
                             <constraint firstItem="4qA-s8-w44" firstAttribute="top" secondItem="Jz0-3o-mM5" secondAttribute="bottom" constant="48.5" id="TnS-EE-lyZ"/>
                             <constraint firstItem="OPE-YR-4uJ" firstAttribute="top" secondItem="4qA-s8-w44" secondAttribute="bottom" constant="22" id="V9X-aH-DHS"/>
                             <constraint firstItem="H7z-lQ-YOp" firstAttribute="trailing" secondItem="OPE-YR-4uJ" secondAttribute="trailing" constant="5" id="aYY-H7-86u"/>
                             <constraint firstItem="H7z-lQ-YOp" firstAttribute="bottom" secondItem="tpj-62-Q5I" secondAttribute="bottom" constant="20" id="cSk-i4-4Ac"/>
                             <constraint firstItem="H7z-lQ-YOp" firstAttribute="trailing" secondItem="tpj-62-Q5I" secondAttribute="trailing" constant="40" id="ivk-8g-yJw"/>
                             <constraint firstItem="H7z-lQ-YOp" firstAttribute="trailing" secondItem="Jz0-3o-mM5" secondAttribute="trailing" constant="50" id="kr7-dH-ON9"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="trailing" secondItem="H7z-lQ-YOp" secondAttribute="trailing" id="oHs-ZI-CAB"/>
                             <constraint firstItem="Jz0-3o-mM5" firstAttribute="top" secondItem="H7z-lQ-YOp" secondAttribute="top" constant="46" id="pJM-lG-RdX"/>
+                            <constraint firstItem="MPJ-g6-d5I" firstAttribute="top" secondItem="H7z-lQ-YOp" secondAttribute="top" id="ske-c4-HrJ"/>
                             <constraint firstItem="OPE-YR-4uJ" firstAttribute="leading" secondItem="H7z-lQ-YOp" secondAttribute="leading" constant="5" id="zZD-23-GDF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H7z-lQ-YOp"/>
@@ -344,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jk-nt-k8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4018" y="1175"/>
+            <point key="canvasLocation" x="-4018.4000000000001" y="1174.3628185907048"/>
         </scene>
         <!--Sign Up Step Two View Controller-->
         <scene sceneID="2Si-zW-7wI">
@@ -354,6 +372,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bt4-1K-8pi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mco-kq-9tH">
                                 <rect key="frame" x="50" y="110" width="275" height="119.5"/>
                                 <subviews>
@@ -437,18 +458,22 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rNZ-aj-wKq" firstAttribute="trailing" secondItem="mco-kq-9tH" secondAttribute="trailing" constant="50" id="079-wt-uB0"/>
                             <constraint firstItem="10z-dq-I3a" firstAttribute="leading" secondItem="rNZ-aj-wKq" secondAttribute="leading" constant="40" id="48r-w8-9Ww"/>
                             <constraint firstItem="rNZ-aj-wKq" firstAttribute="trailing" secondItem="10z-dq-I3a" secondAttribute="trailing" constant="40" id="7Nc-r9-Zaw"/>
+                            <constraint firstItem="bt4-1K-8pi" firstAttribute="bottom" secondItem="rNZ-aj-wKq" secondAttribute="bottom" id="BzN-h7-8hd"/>
                             <constraint firstItem="mco-kq-9tH" firstAttribute="leading" secondItem="rNZ-aj-wKq" secondAttribute="leading" constant="50" id="C8n-Fy-kY2"/>
                             <constraint firstItem="lHO-Vg-dIm" firstAttribute="leading" secondItem="rNZ-aj-wKq" secondAttribute="leading" constant="40" id="C8w-1h-Po2"/>
+                            <constraint firstItem="bt4-1K-8pi" firstAttribute="top" secondItem="rNZ-aj-wKq" secondAttribute="top" id="ITj-WH-R8I"/>
                             <constraint firstItem="10z-dq-I3a" firstAttribute="top" secondItem="mco-kq-9tH" secondAttribute="bottom" constant="62.5" id="LRX-D8-mxs"/>
                             <constraint firstItem="rNZ-aj-wKq" firstAttribute="bottom" secondItem="lHO-Vg-dIm" secondAttribute="bottom" constant="20" id="RtP-YM-zel"/>
+                            <constraint firstItem="bt4-1K-8pi" firstAttribute="leading" secondItem="rNZ-aj-wKq" secondAttribute="leading" id="dh1-ZS-V8U"/>
                             <constraint firstItem="lHO-Vg-dIm" firstAttribute="top" secondItem="10z-dq-I3a" secondAttribute="bottom" constant="45" id="eJe-cy-cxD"/>
                             <constraint firstItem="mco-kq-9tH" firstAttribute="top" secondItem="rNZ-aj-wKq" secondAttribute="top" constant="46" id="o7U-nZ-ukD"/>
                             <constraint firstItem="rNZ-aj-wKq" firstAttribute="trailing" secondItem="lHO-Vg-dIm" secondAttribute="trailing" constant="40" id="p8k-e4-IoI"/>
+                            <constraint firstItem="bt4-1K-8pi" firstAttribute="trailing" secondItem="rNZ-aj-wKq" secondAttribute="trailing" id="u92-WA-6CO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rNZ-aj-wKq"/>
                     </view>
@@ -464,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGl-Od-WGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3218" y="1174"/>
+            <point key="canvasLocation" x="-3218.4000000000001" y="1173.4632683658172"/>
         </scene>
         <!--User Profile View Controller-->
         <scene sceneID="BCc-Ta-UYs">
@@ -474,18 +499,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DIVI (6 of 15) - Divi Kumar copy" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-kC-7ij">
-                                <rect key="frame" x="67" y="74" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-Fp-SNR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DIVI (6 of 15) - Divi Kumar copy" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-kC-7ij" userLabel="userimage">
+                                <rect key="frame" x="58" y="45" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1zQ-Fp-SNR" firstAttribute="bottom" secondItem="Ovc-wf-KTU" secondAttribute="bottom" id="WCG-Hc-Zgj"/>
+                            <constraint firstItem="1zQ-Fp-SNR" firstAttribute="top" secondItem="NEF-13-UKo" secondAttribute="top" id="fR2-sx-i65"/>
+                            <constraint firstItem="1zQ-Fp-SNR" firstAttribute="leading" secondItem="Ovc-wf-KTU" secondAttribute="leading" id="inV-Bu-he2"/>
+                            <constraint firstItem="1zQ-Fp-SNR" firstAttribute="trailing" secondItem="Ovc-wf-KTU" secondAttribute="trailing" id="pXr-Gt-GFj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ovc-wf-KTU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kD-oi-Sju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2367" y="1174"/>
+            <point key="canvasLocation" x="-2367.1999999999998" y="1173.4632683658172"/>
         </scene>
         <!--User Settings View Controller-->
         <scene sceneID="eVr-ZG-JQc">
@@ -494,7 +528,18 @@
                     <view key="view" contentMode="scaleToFill" id="uns-C4-wIh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HQs-qA-XD7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2zV-0A-leH" firstAttribute="trailing" secondItem="HQs-qA-XD7" secondAttribute="trailing" id="Okl-zZ-oNZ"/>
+                            <constraint firstItem="HQs-qA-XD7" firstAttribute="leading" secondItem="2zV-0A-leH" secondAttribute="leading" id="Sxn-BV-MCp"/>
+                            <constraint firstItem="2zV-0A-leH" firstAttribute="bottom" secondItem="HQs-qA-XD7" secondAttribute="bottom" id="ZZj-Tq-inW"/>
+                            <constraint firstItem="HQs-qA-XD7" firstAttribute="top" secondItem="2zV-0A-leH" secondAttribute="top" id="hb5-BN-okT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2zV-0A-leH"/>
                     </view>
                 </viewController>
@@ -509,7 +554,18 @@
                     <view key="view" contentMode="scaleToFill" id="sas-uz-lW3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-6k-5On">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dcJ-kn-tPM" firstAttribute="trailing" secondItem="oFC-6k-5On" secondAttribute="trailing" id="8em-TX-e9t"/>
+                            <constraint firstItem="oFC-6k-5On" firstAttribute="top" secondItem="dcJ-kn-tPM" secondAttribute="top" id="kZB-0w-AhC"/>
+                            <constraint firstItem="oFC-6k-5On" firstAttribute="leading" secondItem="dcJ-kn-tPM" secondAttribute="leading" id="mpA-nL-nBU"/>
+                            <constraint firstItem="dcJ-kn-tPM" firstAttribute="bottom" secondItem="oFC-6k-5On" secondAttribute="bottom" id="ydp-MZ-inn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dcJ-kn-tPM"/>
                     </view>
                 </viewController>
@@ -845,6 +901,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cyd-N9-RkM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="king" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-8o-Pnd">
                                 <rect key="frame" x="80" y="84" width="211" height="299"/>
                             </imageView>
@@ -880,13 +939,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.22881734300000001" green="0.7209220154" blue="0.93371518779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oma-rz-aKV" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" constant="143" id="3Gd-7n-gue"/>
                             <constraint firstItem="gg3-dy-8q6" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" constant="51" id="3Uj-4A-ClG"/>
                             <constraint firstItem="Y6K-8o-Pnd" firstAttribute="top" secondItem="g0F-l2-z84" secondAttribute="top" constant="20" id="4gZ-tr-22a"/>
+                            <constraint firstItem="cyd-N9-RkM" firstAttribute="bottom" secondItem="g0F-l2-z84" secondAttribute="bottom" id="4ge-0K-pdR"/>
                             <constraint firstItem="g0F-l2-z84" firstAttribute="trailing" secondItem="oma-rz-aKV" secondAttribute="trailing" constant="143" id="6U5-WT-DfR"/>
                             <constraint firstItem="gg3-dy-8q6" firstAttribute="top" secondItem="bf5-gs-91m" secondAttribute="bottom" constant="31" id="AAK-Ri-PT4"/>
+                            <constraint firstItem="cyd-N9-RkM" firstAttribute="top" secondItem="g0F-l2-z84" secondAttribute="top" id="L6G-ET-YUi"/>
                             <constraint firstItem="g0F-l2-z84" firstAttribute="bottom" secondItem="N7p-vB-HIF" secondAttribute="bottom" constant="43" id="Ll0-Nj-VWk"/>
                             <constraint firstItem="K5w-wk-ZT8" firstAttribute="top" secondItem="gg3-dy-8q6" secondAttribute="bottom" constant="25" id="Qjq-Ig-Y54"/>
                             <constraint firstItem="bf5-gs-91m" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" constant="51" id="Rgv-l8-Byg"/>
@@ -897,10 +958,12 @@
                             <constraint firstItem="g0F-l2-z84" firstAttribute="trailing" secondItem="N7p-vB-HIF" secondAttribute="trailing" constant="110" id="apd-IM-bb4"/>
                             <constraint firstItem="N7p-vB-HIF" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" constant="108" id="eJ8-6Z-9Mm"/>
                             <constraint firstItem="g0F-l2-z84" firstAttribute="trailing" secondItem="gg3-dy-8q6" secondAttribute="trailing" constant="56" id="eac-Pg-li7"/>
+                            <constraint firstItem="cyd-N9-RkM" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" id="kxI-iL-LPQ"/>
                             <constraint firstItem="oma-rz-aKV" firstAttribute="top" secondItem="Y6K-8o-Pnd" secondAttribute="bottom" constant="8" id="lK6-J8-JgL"/>
                             <constraint firstItem="g0F-l2-z84" firstAttribute="trailing" secondItem="K5w-wk-ZT8" secondAttribute="trailing" constant="172" id="lmz-cd-0oJ"/>
                             <constraint firstItem="K5w-wk-ZT8" firstAttribute="leading" secondItem="g0F-l2-z84" secondAttribute="leading" constant="165" id="m0N-kU-czM"/>
                             <constraint firstItem="g0F-l2-z84" firstAttribute="trailing" secondItem="bf5-gs-91m" secondAttribute="trailing" constant="56" id="qFZ-YG-nYr"/>
+                            <constraint firstItem="cyd-N9-RkM" firstAttribute="trailing" secondItem="g0F-l2-z84" secondAttribute="trailing" id="rpc-Iy-rXh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g0F-l2-z84"/>
                     </view>
@@ -912,13 +975,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unq-kl-xbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Drl-H7-Svz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
-            <point key="canvasLocation" x="-3217" y="313"/>
+            <point key="canvasLocation" x="-3218.4000000000001" y="312.59370314842579"/>
         </scene>
     </scenes>
     <resources>
         <image name="DIVI (6 of 15) - Divi Kumar copy" width="1389" height="1512"/>
         <image name="about-1" width="175" height="185"/>
+        <image name="background" width="1000" height="1786"/>
         <image name="cancel-1" width="150" height="133"/>
         <image name="king" width="320" height="640"/>
         <image name="pricing-1" width="196" height="185"/>
