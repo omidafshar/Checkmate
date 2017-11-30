@@ -21,9 +21,6 @@ class SignUpStepTwoViewController: UIViewController {
     
     var planType: String = "basic"
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.clear
