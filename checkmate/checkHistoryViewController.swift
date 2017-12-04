@@ -1,14 +1,14 @@
 //
-//  userSettingsViewController.swift
+//  checkHistoryViewController.swift
 //  checkmate
 //
-//  Created by Divi Kumar on 11/29/17.
+//  Created by Manoj Adhikari on 12/3/17.
 //  Copyright © 2017 Divi Kumar. All rights reserved.
 //
 
 import UIKit
 
-class userSettingsViewController: UIViewController {
+class checkHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
