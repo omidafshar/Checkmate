@@ -8,7 +8,7 @@
 
 import UIKit
 
-class checkHistoryViewCell: UITableViewCell {
+class checkHistoryCell: UITableViewCell {
     
     @IBOutlet weak var userImage: UIImageView!
     

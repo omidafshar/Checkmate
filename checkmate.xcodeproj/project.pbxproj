@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1619089C1FD51D3400527922 /* checkHistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619089B1FD51D3400527922 /* checkHistoryViewCell.swift */; };
+		1619089C1FD51D3400527922 /* checkHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619089B1FD51D3400527922 /* checkHistoryCell.swift */; };
+		16B7BAF61FD52BCF0015869F /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7BAF51FD52BCF0015869F /* searchViewController.swift */; };
+		16D3BC731FD6003500AAF465 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3BC721FD6003500AAF465 /* UserProfile.swift */; };
 		794F4809EC79F298995BC121 /* Pods_checkmateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F22072240561F9A2F2A53A /* Pods_checkmateTests.framework */; };
 		875FA4DA85D5FD5C006EB462 /* Pods_checkmateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */; };
 		BEB37C20E05E9599FE6EB964 /* Pods_checkmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEC460F91C923AFB603D37 /* Pods_checkmate.framework */; };
@@ -45,7 +47,9 @@
 
 /* Begin PBXFileReference section */
 		086338DB75BE614F9561B937 /* Pods-checkmateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateUITests/Pods-checkmateUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1619089B1FD51D3400527922 /* checkHistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkHistoryViewCell.swift; sourceTree = "<group>"; };
+		1619089B1FD51D3400527922 /* checkHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkHistoryCell.swift; sourceTree = "<group>"; };
+		16B7BAF51FD52BCF0015869F /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		16D3BC721FD6003500AAF465 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		3ABAD617B1D6F2F683F8C0EC /* Pods-checkmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.debug.xcconfig"; sourceTree = "<group>"; };
 		579D42FAA1B6580A7B260928 /* Pods-checkmateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateUITests/Pods-checkmateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_checkmateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,9 +110,17 @@
 		1619089F1FD51E4600527922 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1619089B1FD51D3400527922 /* checkHistoryViewCell.swift */,
+				1619089B1FD51D3400527922 /* checkHistoryCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		16C305A31FD53AA800DD4052 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16D3BC721FD6003500AAF465 /* UserProfile.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2974F0B50AE720CDA4D8D7DC /* Frameworks */ = {
@@ -137,6 +149,7 @@
 		C804A7B11FB9715C00F7DF6D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16B7BAF51FD52BCF0015869F /* searchViewController.swift */,
 				C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */,
 				C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */,
 				C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */,
@@ -154,13 +167,6 @@
 				C86A332E1FB9662A00352600 /* AppDelegate.swift */,
 			);
 			path = "App Utilites";
-			sourceTree = "<group>";
-		};
-		C804A7B31FB971C500F7DF6D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C86A33221FB9662A00352600 = {
@@ -188,7 +194,7 @@
 		C86A332D1FB9662A00352600 /* checkmate */ = {
 			isa = PBXGroup;
 			children = (
-				C804A7B31FB971C500F7DF6D /* Model */,
+				16C305A31FD53AA800DD4052 /* Model */,
 				C804A7B21FB9718E00F7DF6D /* App Utilites */,
 				C86A33321FB9662A00352600 /* Main.storyboard */,
 				C86A33351FB9662A00352600 /* Assets.xcassets */,
@@ -522,12 +528,14 @@
 			files = (
 				C814F4C01FC525AB00306B42 /* SignUpStep2ViewController.swift in Sources */,
 				C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */,
+				16D3BC731FD6003500AAF465 /* UserProfile.swift in Sources */,
 				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
 				C8ECD22D1FCFDB5E00063A33 /* checkHistoryViewController.swift in Sources */,
 				C8ECD2251FCFBA1200063A33 /* SignInViewController.swift in Sources */,
+				16B7BAF61FD52BCF0015869F /* searchViewController.swift in Sources */,
 				C8ECD2271FCFBBD900063A33 /* SignUpStep1ViewController.swift in Sources */,
 				C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */,
-				1619089C1FD51D3400527922 /* checkHistoryViewCell.swift in Sources */,
+				1619089C1FD51D3400527922 /* checkHistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GUT564572;
+				DEVELOPMENT_TEAM = 8A57T4SW56;
 				INFOPLIST_FILE = checkmate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -712,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9GUT564572;
+				DEVELOPMENT_TEAM = 8A57T4SW56;
 				INFOPLIST_FILE = checkmate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,7 +9,9 @@
 import UIKit
 
 class userProfileViewController: UIViewController {
-
+    
+    var curProfile: UserProfile?
+    
     @IBOutlet weak var userProfileImageView: UIImageView!
     
     @IBOutlet weak var userNameLabel: UITextField!
@@ -42,7 +44,7 @@ class userProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userProfileImageView.clipsToBounds = true
+
 
         // Do any additional setup after loading the view.
     }

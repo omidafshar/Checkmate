@@ -8,10 +8,27 @@
 
 import UIKit
 
-class checkHistoryViewController: UITableViewController {
+class checkHistoryViewController: UIViewController {
+    
+//    var profilesChecked: [UserProfile]?
+    
+    @IBOutlet weak var checkHistoryTableView: UITableView!
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "checkHistoryView", for: indexPath)
+//            as! checkHistoryCell
+//        return cell
+//    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        checkHistoryTableView.delegate = self
+//        checkHistoryTableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
