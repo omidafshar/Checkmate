@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -503,7 +503,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DIVI (6 of 15) - Divi Kumar copy" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-kC-7ij" userLabel="userimage">
-                                <rect key="frame" x="67" y="36" width="240" height="128"/>
+                                <rect key="frame" x="124" y="40" width="127" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Divyashish Kumar" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-FC-Kha">
@@ -530,7 +530,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="verified" translatesAutoresizingMaskIntoConstraints="NO" id="srD-YC-e41">
-                                <rect key="frame" x="0.0" y="286" width="375" height="80"/>
+                                <rect key="frame" x="-1" y="286" width="376" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Last Checked November 29, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFx-Mj-E2D">
@@ -548,9 +548,12 @@
                                 <state key="normal" title="Update Check" backgroundImage="background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateCheckButtonPressed:" destination="lYe-mx-gtV" eventType="touchUpInside" id="iwp-2F-Lji"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    National Criminal Database                      Check" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbD-3j-3d4">
-                                <rect key="frame" x="0.0" y="439" width="272" height="70"/>
+                                <rect key="frame" x="0.0" y="439" width="236" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -558,7 +561,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Registered Sex Offender              Database Check" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-MU-4Fe">
-                                <rect key="frame" x="0.0" y="510" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="510" width="236" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -566,13 +569,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Department of Motor                 Vechicles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-Qx-CNa">
-                                <rect key="frame" x="0.0" y="580" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="580" width="236" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d5-sF-a9s">
+                                <rect key="frame" x="250" y="447" width="115" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="see_details"/>
+                                <connections>
+                                    <action selector="NCDcheckButtonPressed:" destination="lYe-mx-gtV" eventType="touchUpInside" id="Tql-Zx-K3f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-eg-DUU">
+                                <rect key="frame" x="250" y="588" width="115" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="see_details"/>
+                                <connections>
+                                    <action selector="DMVcheckButtonPressed:" destination="lYe-mx-gtV" eventType="touchUpInside" id="udN-jg-DM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ3-nL-BQI">
+                                <rect key="frame" x="247" y="518" width="115" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="see_details"/>
+                                <connections>
+                                    <action selector="RSODcheckButtonPressed:" destination="lYe-mx-gtV" eventType="touchUpInside" id="ONS-Ss-3Ji"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -583,6 +610,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ovc-wf-KTU"/>
                     </view>
+                    <connections>
+                        <outlet property="lastCheckUpdatedLabel" destination="CFx-Mj-E2D" id="Gid-AW-oT5"/>
+                        <outlet property="userAgeLabel" destination="yWo-sY-Lap" id="X3X-cy-itm"/>
+                        <outlet property="userNameLabel" destination="jNg-FC-Kha" id="Xa9-gl-uJK"/>
+                        <outlet property="userProfileImageView" destination="Bb6-kC-7ij" id="M6W-Fc-RJP"/>
+                        <outlet property="verificationStatusBar" destination="srD-YC-e41" id="xrv-e7-HSJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kD-oi-Sju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1168,6 +1202,7 @@
         <image name="edit_photo" width="338" height="221"/>
         <image name="king" width="320" height="640"/>
         <image name="pricing-1" width="196" height="185"/>
+        <image name="see_details" width="340" height="167"/>
         <image name="verified" width="975" height="205"/>
         <image name="welcomePage" width="946" height="746"/>
     </resources>

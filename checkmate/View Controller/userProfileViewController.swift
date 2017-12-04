@@ -10,8 +10,39 @@ import UIKit
 
 class userProfileViewController: UIViewController {
 
+    @IBOutlet weak var userProfileImageView: UIImageView!
+    
+    @IBOutlet weak var userNameLabel: UITextField!
+    
+    @IBOutlet weak var userAgeLabel: UITextField!
+    
+    @IBOutlet weak var verificationStatusBar: UIImageView!
+    
+    @IBOutlet weak var lastCheckUpdatedLabel: UILabel!
+    
+    
+    
+    @IBAction func updateCheckButtonPressed(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func NCDcheckButtonPressed(_ sender: Any) {
+    }
+    
+    
+    @IBAction func RSODcheckButtonPressed(_ sender: Any) {
+    }
+    
+    
+    @IBAction func DMVcheckButtonPressed(_ sender: Any) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        userProfileImageView.clipsToBounds = true
 
         // Do any additional setup after loading the view.
     }
