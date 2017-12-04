@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -12,6 +12,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Thin</string>
         </array>
     </customFonts>
@@ -865,7 +866,7 @@ Vechicles</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCt-QC-L0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1548" y="1902.0989505247378"/>
+            <point key="canvasLocation" x="-1846" y="902"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="afT-VL-Gun">
@@ -992,7 +993,7 @@ Vechicles</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fb8-d2-486" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-737" y="1902"/>
+            <point key="canvasLocation" x="-1050" y="902"/>
         </scene>
         <!--Check History View Controller-->
         <scene sceneID="lrz-XN-7d5">
@@ -1077,7 +1078,7 @@ Kumar
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HV-fX-v2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="2098"/>
+            <point key="canvasLocation" x="-1049" y="1863"/>
         </scene>
         <!--CheckMate-->
         <scene sceneID="l3o-zo-Pmb">
@@ -1209,7 +1210,7 @@ Kumar
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrB-39-Rb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="2097.3013493253375"/>
+            <point key="canvasLocation" x="-278" y="1863"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="N35-NX-gSX">
@@ -1623,6 +1624,7 @@ Kumar
     </scenes>
     <resources>
         <image name="DIVI (6 of 15) - Divi Kumar copy" width="1389" height="1512"/>
+        <image name="Inactivebirthday" width="217" height="217"/>
         <image name="White_Arrow" width="35" height="56"/>
         <image name="about-1" width="175" height="185"/>
         <image name="background" width="1000" height="1786"/>
