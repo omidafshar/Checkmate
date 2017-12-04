@@ -812,6 +812,93 @@
             </objects>
             <point key="canvasLocation" x="-423.19999999999999" y="1857.1214392803599"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dvz-m1-q8q">
+            <objects>
+                <navigationController id="wqb-Gb-DU6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="08X-WN-ZV3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Q37-Ch-iD5" kind="relationship" relationship="rootViewController" id="lgS-rK-JKp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HV-fX-v2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1151" y="2118"/>
+        </scene>
+        <!--Checkmate-->
+        <scene sceneID="4Dz-vh-A8N">
+            <objects>
+                <viewController id="Q37-Ch-iD5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLm-Gd-D8m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HLK-ok-LJc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="blackTranslucent" searchBarStyle="minimal" placeholder="Search Checkmate members by name" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-zH-3tk">
+                                <rect key="frame" x="0.0" y="280" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U79-PV-oNR">
+                                <rect key="frame" x="196" y="149" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="inactiveEmail"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-Ho-1Mn">
+                                <rect key="frame" x="104" y="149" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="contactsInactive"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12g-n7-9Pu">
+                                <rect key="frame" x="16" y="149" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="phoneWord"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmx-Oy-QE5">
+                                <rect key="frame" x="284" y="149" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Inactivebirthday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODH-qf-Scj">
+                                <rect key="frame" x="284" y="500" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="inactiveShareReal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w94-7j-yRR">
+                                <rect key="frame" x="16" y="498" width="79" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="inactiveShare"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HLK-ok-LJc" firstAttribute="top" secondItem="bLm-Gd-D8m" secondAttribute="top" id="IPQ-sx-qp1"/>
+                            <constraint firstItem="HLK-ok-LJc" firstAttribute="bottom" secondItem="x1p-zX-WfD" secondAttribute="bottom" id="sIi-kX-lLC"/>
+                            <constraint firstItem="HLK-ok-LJc" firstAttribute="leading" secondItem="x1p-zX-WfD" secondAttribute="leading" id="sNS-fq-hy5"/>
+                            <constraint firstItem="HLK-ok-LJc" firstAttribute="trailing" secondItem="x1p-zX-WfD" secondAttribute="trailing" id="vFE-dW-Tvi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x1p-zX-WfD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Checkmate" id="Pmo-c3-Dde">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="plain" id="9Ew-uo-aq1">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cH0-Kf-L6P">
+                                <rect key="frame" x="255" y="0.0" width="104" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="inactiveHistory"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdB-Hp-gDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418.39999999999998" y="2117.9910044977514"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="N35-NX-gSX">
             <objects>
@@ -1224,11 +1311,18 @@
     </scenes>
     <resources>
         <image name="DIVI (6 of 15) - Divi Kumar copy" width="1389" height="1512"/>
+        <image name="Inactivebirthday" width="217" height="217"/>
         <image name="about-1" width="175" height="185"/>
         <image name="background" width="1000" height="1786"/>
         <image name="cancel-1" width="150" height="133"/>
+        <image name="contactsInactive" width="217" height="217"/>
         <image name="edit_photo" width="338" height="221"/>
+        <image name="inactiveEmail" width="217" height="217"/>
+        <image name="inactiveHistory" width="104" height="118"/>
+        <image name="inactiveShare" width="217" height="217"/>
+        <image name="inactiveShareReal" width="217" height="217"/>
         <image name="king" width="320" height="640"/>
+        <image name="phoneWord" width="217" height="217"/>
         <image name="pricing-1" width="196" height="185"/>
         <image name="see_details" width="340" height="167"/>
         <image name="verified" width="975" height="205"/>
