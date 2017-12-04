@@ -8,7 +8,7 @@
 
 import UIKit
 
-class checkHistoryViewController: UIViewController {
+class checkHistoryViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
