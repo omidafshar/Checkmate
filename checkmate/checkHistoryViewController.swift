@@ -10,9 +10,16 @@ import UIKit
 
 class checkHistoryViewController: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userImage.layer.cornerRadius = userImage.frame.size.width / 2
+        userImage.clipsToBounds = true
+        userImage.layer.borderColor = UIColor.white.cgColor
+        userImage.layer.borderWidth = 1
+        
         // Do any additional setup after loading the view.
     }
 
