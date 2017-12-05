@@ -12,10 +12,11 @@ import UIKit
 class UserProfile {
     var First: String
     var Last: String
+    var age: Int
     var profilePic: UIImage
-    var DB1Status: String
-    var DB2Status: String
-    var DB3Status: String
+    var res1: Int
+    var res2: Int
+    var res3: Int
     var lastCheckedDate: String
     var searchHistory:[UserProfile]
 
@@ -24,21 +25,23 @@ class UserProfile {
         self.First = "Hello"
         self.Last = "World"
         self.profilePic = UIImage(named: "background")!
-        self.DB1Status = ""
-        self.DB2Status = ""
-        self.DB3Status = ""
+        self.res1 = 0
+        self.res2 = 0
+        self.res3 = 0
+        self.age = 0
         self.lastCheckedDate = ""
         self.searchHistory = []
     }
     
 
-    init(first: String, last: String, profilePic: UIImage, a: String, b: String, c: String, date:String) {
+    init(first: String, last: String, profilePic: UIImage, age: Int, a: Int, b: Int, c: Int, date:String) {
         self.First = first
         self.Last = last
         self.profilePic = profilePic
-        self.DB1Status = a
-        self.DB2Status = b
-        self.DB3Status = c
+        self.res1 = a
+        self.res2 = b
+        self.res3 = c
+        self.age = age
         self.lastCheckedDate = date
         self.searchHistory = []
     }

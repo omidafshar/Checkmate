@@ -23,7 +23,7 @@ class searchViewController: UIViewController {
     }
     
     @IBAction func settingsButtonPressed(_ sender: Any) {
-//        performSegue(withIdentifier: "userProfileToUserSettings", sender: self)
+        performSegue(withIdentifier: "userProfileToUserSettings", sender: self)
     }
     
     @IBAction func inviteButtonPressed(_ sender: Any) {
@@ -40,12 +40,13 @@ class searchViewController: UIViewController {
                 let controller = destination as! userProfileViewController
                 controller.curProfile = UserProfile()
             } else if (identifier == "userProfileToUserSettings") {
-                
+                let controller = destination as! userSettingsViewController
+
             } else if (identifier == "userProfileToInvite") {
                 
             } else if (identifier == "userProfileToCheckHistory") {
                 let controller = destination as! checkHistoryViewController
-//                controller.profilesChecked = curProfile?.searchHistory
+                controller.profilesChecked = (curProfile?.searchHistory)!
             } else {
                 print("Invalid Segue. Not matched with any of the segues")
             }

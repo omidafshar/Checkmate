@@ -10,6 +10,7 @@
 		1619089C1FD51D3400527922 /* checkHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619089B1FD51D3400527922 /* checkHistoryCell.swift */; };
 		16B7BAF61FD52BCF0015869F /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7BAF51FD52BCF0015869F /* searchViewController.swift */; };
 		16D3BC731FD6003500AAF465 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3BC721FD6003500AAF465 /* UserProfile.swift */; };
+		16D3BC751FD6180E00AAF465 /* userSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3BC741FD6180E00AAF465 /* userSettingsViewController.swift */; };
 		794F4809EC79F298995BC121 /* Pods_checkmateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F22072240561F9A2F2A53A /* Pods_checkmateTests.framework */; };
 		875FA4DA85D5FD5C006EB462 /* Pods_checkmateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */; };
 		BEB37C20E05E9599FE6EB964 /* Pods_checkmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEC460F91C923AFB603D37 /* Pods_checkmate.framework */; };
@@ -50,6 +51,7 @@
 		1619089B1FD51D3400527922 /* checkHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkHistoryCell.swift; sourceTree = "<group>"; };
 		16B7BAF51FD52BCF0015869F /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		16D3BC721FD6003500AAF465 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		16D3BC741FD6180E00AAF465 /* userSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettingsViewController.swift; sourceTree = "<group>"; };
 		3ABAD617B1D6F2F683F8C0EC /* Pods-checkmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.debug.xcconfig"; sourceTree = "<group>"; };
 		579D42FAA1B6580A7B260928 /* Pods-checkmateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateUITests/Pods-checkmateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_checkmateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 		C804A7B11FB9715C00F7DF6D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16D3BC741FD6180E00AAF465 /* userSettingsViewController.swift */,
 				16B7BAF51FD52BCF0015869F /* searchViewController.swift */,
 				C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */,
 				C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */,
@@ -527,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C814F4C01FC525AB00306B42 /* SignUpStep2ViewController.swift in Sources */,
+				16D3BC751FD6180E00AAF465 /* userSettingsViewController.swift in Sources */,
 				C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */,
 				16D3BC731FD6003500AAF465 /* UserProfile.swift in Sources */,
 				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
