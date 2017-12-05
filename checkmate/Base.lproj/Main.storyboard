@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wqb-Gb-DU6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -417,7 +417,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpButtonPressed:" destination="W1c-Be-Std" eventType="touchUpInside" id="NKe-Tq-UJO"/>
+                                    <action selector="signUpButtonPressed:" destination="W1c-Be-Std" eventType="touchUpInside" id="wis-Hi-DYo"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="10z-dq-I3a">
@@ -492,6 +492,7 @@
                         <outlet property="lastNameTextField" destination="K2R-BH-QLq" id="VAu-cD-1DL"/>
                         <outlet property="passwordTextField" destination="Rns-m8-WU7" id="rE4-Pp-nT4"/>
                         <outlet property="phoneNumberTextField" destination="JFT-NG-cwQ" id="cCa-ql-Xog"/>
+                        <segue destination="wqb-Gb-DU6" kind="showDetail" identifier="signUpToNav" action="showViewController:sender:" id="lMi-HF-ZEh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGl-Od-WGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1126,12 +1127,13 @@ Kumar
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qro-qK-ffi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="724"/>
+            <point key="canvasLocation" x="98" y="743"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dvz-m1-q8q">
             <objects>
-                <navigationController id="wqb-Gb-DU6" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HV-fX-v2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="searchViewControllerNav" id="wqb-Gb-DU6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="08X-WN-ZV3">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1140,14 +1142,13 @@ Kumar
                         <segue destination="I9z-eF-fP3" kind="relationship" relationship="rootViewController" id="0pM-cU-jcB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6HV-fX-v2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1769" y="743"/>
+            <point key="canvasLocation" x="-999" y="-205"/>
         </scene>
         <!--CheckMate-->
         <scene sceneID="l3o-zo-Pmb">
             <objects>
-                <viewController id="I9z-eF-fP3" customClass="searchViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchViewController" id="I9z-eF-fP3" customClass="searchViewController" customModule="checkmate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZYz-Ag-4bu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

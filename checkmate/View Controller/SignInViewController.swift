@@ -53,7 +53,6 @@ class SignInViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var forgotPasswordButtonPressed: UIButton!
     
     
     

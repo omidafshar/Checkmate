@@ -21,36 +21,6 @@ class SignUpStepTwoViewController: UIViewController {
     
     var planType: String = "basic"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.clear
-        let gradientlayer = CAGradientLayer()
-        gradientlayer.frame = self.view.frame
-        gradientlayer.colors = [UIColor.flatOrangeDark.cgColor, UIColor.flatNavyBlue.cgColor,UIColor(red: 70/255.5, green: 146/255.5, blue: 150/255.5, alpha: 1.0).cgColor ]
-        gradientlayer.locations = [0.0, 0.6, 1.0]
-        gradientlayer.startPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientlayer.endPoint = CGPoint(x: 0.0, y: 0.0)
-        self.view.layer.insertSublayer(gradientlayer, at: 0)
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func basicButtonPressed(_ sender: Any) {
-        planType = "basic"
-    }
-    
-    
-    
-    @IBAction func premiumButtonPressed(_ sender: Any) {
-        planType = "string"
-    }
-    
-    
     @IBAction func signUpButtonPressed(_ sender: Any) {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
@@ -88,11 +58,22 @@ class SignUpStepTwoViewController: UIViewController {
                             alertController.addAction(defaultAction)
                             self.present(alertController, animated: true, completion: nil)
                         } else {
-                            // self.performSegue(withIdentifier: segueSignUpToProfile, sender: self)
-                            let alertController = UIAlertController(title: "Signed up successfully!", message: error?.localizedDescription, preferredStyle: .alert)
-                            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                            alertController.addAction(defaultAction)
-                            self.present(alertController, animated: true, completion: nil)
+                            guard let firstName = self.firstNameTextField.text else { return }
+                            guard let lastName = self.lastNameTextField.text else { return }
+                            State.shared.currentUser.First = firstName
+                            State.shared.currentUser.Last = lastName
+                            self.performSegue(withIdentifier: "signUpToNav", sender: self)
+                            
+                            
+
+
+                            
+                            
+
+//                            let alertController = UIAlertController(title: "Signed up successfully!", message: error?.localizedDescription, preferredStyle: .alert)
+//                            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//                            alertController.addAction(defaultAction)
+//                            self.present(alertController, animated: true, completion: nil)
                         }
                     }
                     
@@ -112,6 +93,44 @@ class SignUpStepTwoViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier != nil) {
+            let identifier = segue.identifier!
+            let destination = segue.destination
+            if (identifier == "segueSignUpToProfile") {
+                let controller = destination as! searchViewController
+                // TODO: Calculate the age rather than hardcoding it
+
+//            } else if (identifier == "userProfileToUserSettings") {
+//                let controller = destination as! userSettingsViewController
+//
+//            } else if (identifier == "userProfileToInvite") {
+//
+//            } else if (identifier == "userProfileToCheckHistory") {
+//                let controller = destination as! checkHistoryViewController
+//                controller.profilesChecked = (curProfile?.searchHistory)!
+            } else if (identifier == "signUpToNav") {
+//                let user = UserProfile()
+//                (destination as! )
+            } else {
+                print("Invalid Segue. Not matched with any of the segues")
+            }
+            
+        } else {
+            print("The segue identifier was null")
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 
     /*
     // MARK: - Navigation
