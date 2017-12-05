@@ -14,6 +14,7 @@ class WelcomeScreenViewController: UIViewController {
     @IBOutlet weak var checkMateTeam: UITextField!
     @IBAction func SignButtonPressed(_ sender: Any) {
         //Peform a Segue to Sign in View Controller
+        print("Hello")
         performSegue(withIdentifier: "WelcomeToSignIn", sender: self)
     }
     

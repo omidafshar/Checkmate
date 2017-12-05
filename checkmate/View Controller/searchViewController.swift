@@ -58,6 +58,7 @@ class searchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userProfileButton.setImage(State.shared.currentUser.profilePic, for: [])
         print(5)
         curProfile = UserProfile()
         print((curProfile?.First)!)
