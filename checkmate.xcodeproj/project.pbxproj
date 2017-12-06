@@ -27,6 +27,9 @@
 		C8ECD2271FCFBBD900063A33 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */; };
 		C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */; };
 		C8ECD22D1FCFDB5E00063A33 /* checkHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */; };
+		CA1332111FD7D7800053D295 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1332101FD7D7800053D295 /* UIViewX.swift */; };
+		CA1332131FD7D7AD0053D295 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1332121FD7D7AD0053D295 /* UIButtonX.swift */; };
+		CA1332151FD7D7FE0053D295 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1332141FD7D7FE0053D295 /* UITextFieldX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1ViewController.swift; sourceTree = "<group>"; };
 		C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
 		C8ECD22C1FCFDB5E00063A33 /* checkHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkHistoryViewController.swift; sourceTree = "<group>"; };
+		CA1332101FD7D7800053D295 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		CA1332121FD7D7AD0053D295 /* UIButtonX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		CA1332141FD7D7FE0053D295 /* UITextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
 		EAF055013C58E9C13721ED26 /* Pods-checkmateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECF8FFEF5410084824330827 /* Pods-checkmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmate.release.xcconfig"; path = "Pods/Target Support Files/Pods-checkmate/Pods-checkmate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				16D3BC721FD6003500AAF465 /* UserProfile.swift */,
+				CA1332101FD7D7800053D295 /* UIViewX.swift */,
+				CA1332121FD7D7AD0053D295 /* UIButtonX.swift */,
+				CA1332141FD7D7FE0053D295 /* UITextFieldX.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -533,7 +542,10 @@
 				16D3BC751FD6180E00AAF465 /* userSettingsViewController.swift in Sources */,
 				C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */,
 				16D3BC731FD6003500AAF465 /* UserProfile.swift in Sources */,
+				CA1332151FD7D7FE0053D295 /* UITextFieldX.swift in Sources */,
 				C86A33311FB9662A00352600 /* WelcomeScreenViewController.swift in Sources */,
+				CA1332131FD7D7AD0053D295 /* UIButtonX.swift in Sources */,
+				CA1332111FD7D7800053D295 /* UIViewX.swift in Sources */,
 				C8ECD22D1FCFDB5E00063A33 /* checkHistoryViewController.swift in Sources */,
 				C8ECD2251FCFBA1200063A33 /* SignInViewController.swift in Sources */,
 				16B7BAF61FD52BCF0015869F /* searchViewController.swift in Sources */,
