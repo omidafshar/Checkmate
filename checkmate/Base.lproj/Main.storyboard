@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5u4-Ks-QBL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -624,6 +624,9 @@ Vechicles</string>
                     </view>
                     <navigationItem key="navigationItem" id="6o7-tU-sZB"/>
                     <connections>
+                        <outlet property="DateBase1Button" destination="7d5-sF-a9s" id="UcE-ug-LyN"/>
+                        <outlet property="DateBase2Button" destination="KQ3-nL-BQI" id="hxo-FF-Qmg"/>
+                        <outlet property="DateBase3Button" destination="sjN-eg-DUU" id="OLX-oX-zm0"/>
                         <outlet property="lastCheckUpdatedLabel" destination="CFx-Mj-E2D" id="Gid-AW-oT5"/>
                         <outlet property="userAgeLabel" destination="yWo-sY-Lap" id="X3X-cy-itm"/>
                         <outlet property="userNameLabel" destination="jNg-FC-Kha" id="Xa9-gl-uJK"/>
