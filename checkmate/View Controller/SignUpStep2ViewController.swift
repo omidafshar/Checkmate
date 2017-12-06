@@ -16,9 +16,9 @@ class SignUpStepTwoViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
     
     var planType: String = "basic"
     
@@ -61,12 +61,17 @@ class SignUpStepTwoViewController: UIViewController {
                         } else {
                             guard let firstName = self.firstNameTextField.text else { return }
                             guard let lastName = self.lastNameTextField.text else { return }
+                            guard let email = self.emailTextField.text else { return }
+                            guard let phone = self.phoneNumberTextField.text else { return }
+                            let id = (user?.uid)!
                             State.shared.currentUser.First = firstName
                             State.shared.currentUser.Last = lastName
+                            State.shared.currentUser.Email = email
+                            State.shared.currentUser.PhoneNumber = phone
                             State.shared.currentUser.plan = self.planType
-                            State.shared.currentUser.addUsertoDB()
-                            let imagePath = "Images/" + State.shared.currentUser.id + "_profile.jpg"
-                            State.shared.currentUser.getInfoFromDB(completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
+                            State.shared.currentUser.addUsertoDB(id: id)
+                            let imagePath = "Images/" + id + "_profile.jpg"
+                            State.shared.currentUser.getInfoFromDB(id:id, completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
                                 if let data = data {
                                     let image = UIImage(data: data)
                                     State.shared.currentUser.profilePic = image!

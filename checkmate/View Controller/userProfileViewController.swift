@@ -29,7 +29,17 @@ class userProfileViewController: UIViewController {
     
     
     @IBAction func updateCheckButtonPressed(_ sender: Any) {
-        
+        State.shared.currentUser.res1 = 1
+        State.shared.currentUser.res2 = 1
+        State.shared.currentUser.res3 = 1
+        updateDetailButtons(val: 0, button: DateBase1Button)
+        updateDetailButtons(val: 0, button: DateBase2Button)
+        updateDetailButtons(val: 0, button: DateBase3Button)
+        verificationStatusBar.image = UIImage(named:"verified")
+        let date = Date()
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "MM-dd-yyy"
+        lastCheckUpdatedLabel.text = "   Last Checked: " + dateFormater.string(from: date)
     }
     
     
@@ -49,7 +59,7 @@ class userProfileViewController: UIViewController {
         userProfileImageView.image = State.shared.currentUser.profilePic
         userNameLabel.text = State.shared.currentUser.First + " " + State.shared.currentUser.Last
         userAgeLabel.text = String(State.shared.currentUser.age)
-        lastCheckUpdatedLabel.text = "Last Checked " + State.shared.currentUser.lastCheckedDate
+        lastCheckUpdatedLabel.text = "   Last Checked " + State.shared.currentUser.lastCheckedDate
         updateCheckButton()
 
 
@@ -68,8 +78,11 @@ class userProfileViewController: UIViewController {
         let a = State.shared.currentUser.res1
         let b = State.shared.currentUser.res2
         let c = State.shared.currentUser.res3
+//        let a = 1
+//        let b = 2
+//        let c = 0
         if (a == b && b == c && c == 2) {
-            verificationStatusBar.image = UIImage(named: "noChecks")
+            verificationStatusBar.image = UIImage(named: "nocheck")
         } else if (a == b && b == c && c == 0) {
             verificationStatusBar.image = UIImage(named: "verified")
         } else if (a == 1 || b == 1 || c == 1) {
@@ -83,13 +96,14 @@ class userProfileViewController: UIViewController {
     func updateDetailButtons(val: Int, button: UIButton) {
         switch val {
         case 0:
-            button.setImage(UIImage(named: "see_details"), for: [])
+            button.setImage(UIImage(named: "see_details"), for: .normal)
         break
         case 1:
-            button.setImage(UIImage(named:"see_details_gold"), for: [])
+            button.setImage(UIImage(named:"see_details_red"), for: .normal)
         break
         case 2:
-            button.setImage(UIImage(named: "nodetails"), for: [])
+            button.tintColor = UIColor.clear
+            button.setImage(UIImage(named: "nodetails"), for: .normal)
         break
         default:
             print("There was an error")

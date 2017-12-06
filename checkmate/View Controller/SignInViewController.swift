@@ -26,6 +26,8 @@ class SignInViewController: UIViewController {
         
         guard let email = emailInput.text else { return }
         guard let password = passwordInput.text else { return }
+        print(email)
+        print(password)
         
         if email == "" || password == "" {
             //Alert to tell the user that there was an error because they didn't fill anything in the fields
@@ -34,6 +36,8 @@ class SignInViewController: UIViewController {
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         } else {
+            print(email)
+            print(password)
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 if (error != nil) {
                     let alertController = UIAlertController(title: "Log In Error", message:
@@ -42,8 +46,13 @@ class SignInViewController: UIViewController {
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
                 } else {
-                    let imagePath = "Images/" + State.shared.currentUser.id + "_profile.jpg"
-                    State.shared.currentUser.getInfoFromDB(completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
+                
+                    let id = (user?.uid)!
+                    print(id)
+                    print(Auth.auth().currentUser?.uid)
+                    
+                    let imagePath = "Images/" + id + "_profile.jpg"
+                    State.shared.currentUser.getInfoFromDB(id: id, completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
                         if let data = data {
                             let image = UIImage(data: data)
                             State.shared.currentUser.profilePic = image!
