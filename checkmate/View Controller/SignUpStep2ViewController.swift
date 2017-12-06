@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseStorage
 
 class SignUpStepTwoViewController: UIViewController {
 
@@ -64,7 +65,16 @@ class SignUpStepTwoViewController: UIViewController {
                             State.shared.currentUser.Last = lastName
                             State.shared.currentUser.plan = self.planType
                             State.shared.currentUser.addUsertoDB()
-                            self.performSegue(withIdentifier: "signUpToNav", sender: self)
+                            let imagePath = "Images/" + State.shared.currentUser.id + "_profile.jpg"
+                            State.shared.currentUser.getInfoFromDB(completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
+                                if let data = data {
+                                    let image = UIImage(data: data)
+                                    State.shared.currentUser.profilePic = image!
+                                    self.performSegue(withIdentifier: "signUpToNav", sender: self)
+                                } else {
+                                    self.performSegue(withIdentifier: "signUpToNav", sender: self)
+                                }
+                            })})
                             
                             
 
@@ -91,6 +101,20 @@ class SignUpStepTwoViewController: UIViewController {
                     alertController.addAction(defaultAction)
                     self.present(alertController, animated: true, completion: nil)
                 }
+            }
+        }
+    }
+    
+    func getDataFromPath(path: String, completion: @escaping (Data?) -> Void) {
+        let storageRef = Storage.storage().reference()
+        storageRef.child(path).getData(maxSize: 5 * 1024 * 1024) { (data, error) in
+            if let error = error {
+                print(error)
+            }
+            if let data = data {
+                completion(data)
+            } else {
+                completion(nil)
             }
         }
     }

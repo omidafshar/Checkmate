@@ -43,7 +43,7 @@ class SignInViewController: UIViewController {
                     self.present(alertController, animated: true, completion: nil)
                 } else {
                     let imagePath = "Images/" + State.shared.currentUser.id + "_profile.jpg"
-                    self.getDataFromPath(path: imagePath, completion: { (data) in
+                    State.shared.currentUser.getInfoFromDB(completion: {self.getDataFromPath(path: imagePath, completion: { (data) in
                         if let data = data {
                             let image = UIImage(data: data)
                             State.shared.currentUser.profilePic = image!
@@ -51,7 +51,7 @@ class SignInViewController: UIViewController {
                         } else {
                             self.performSegue(withIdentifier: "segueLogInToMainPage", sender: self)
                         }
-                    })
+                    })})
 //                    let alertController = UIAlertController(title: "Response", message: "Signed in!", preferredStyle: .alert)
 //                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 //                    alertController.addAction(defaultAction)

@@ -65,7 +65,24 @@ class UserProfile {
     
     func addUsertoDB() {
         
-        dbRef.child("Users/\(id!)").setValue(["firstName": self.First, "lastName": self.Last, "profilePic": "Images/default_profile_photo", "result1": self.res1, "result2": self.res2, "result3": self.res3, "lastCheckedDate": self.lastCheckedDate, "plan": self.plan, "searchHistory": ""])
+        dbRef.child("Users/\(id!)").setValue(["firstName": self.First, "lastName": self.Last, "profilePic": "Images/" + id + "_profile.jpg", "result1": self.res1, "result2": self.res2, "result3": self.res3, "lastCheckedDate": self.lastCheckedDate, "plan": self.plan, "age": self.age, "searchHistory": ""])
+        
+    }
+    
+    func getInfoFromDB(completion: @escaping () -> Void) {
+        
+        dbRef.child("Users/\(id!)").observeSingleEvent(of: .value, with: { snapshot -> Void in
+            if snapshot.exists() {
+                if let userData = snapshot.value as? [String:AnyObject] {
+                    State.shared.currentUser = UserProfile(first: userData["firstName"] as! String, last: userData["lastName"] as! String, profilePic: UIImage(named: "default_profile_photo")!, age: userData["age"] as! Int, a: userData["result1"] as! Int, b: userData["result2"] as! Int, c: userData["result3"] as! Int, date: userData["lastCheckedDate"] as! String, plan: userData["plan"] as! String)
+                    completion()
+                } else {
+                   
+                }
+            } else {
+                
+            }
+        })
         
     }
     

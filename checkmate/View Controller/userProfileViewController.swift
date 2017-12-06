@@ -47,12 +47,12 @@ class userProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userProfileImageView.image = State.shared.currentUser.profilePic
-        userNameLabel.text = State.shared.currentUser.First
-        userNameLabel.text = State.shared.currentUser.Last
+        userNameLabel.text = State.shared.currentUser.First + " " + State.shared.currentUser.Last
         userAgeLabel.text = String(State.shared.currentUser.age)
         lastCheckUpdatedLabel.text = "Last Checked " + State.shared.currentUser.lastCheckedDate
         updateCheckButton()
-        updateDetailButtons()
+
+
         
         
         // Do any additional setup after loading the view.
@@ -75,48 +75,22 @@ class userProfileViewController: UIViewController {
         } else if (a == 1 || b == 1 || c == 1) {
             verificationStatusBar.image = UIImage(named: "please_review")
         }
+        updateDetailButtons(val: a, button: DateBase1Button )
+        updateDetailButtons(val: b, button: DateBase2Button )
+        updateDetailButtons(val: c, button: DateBase3Button )
     }
     
-    func updateDetailButtons() {
-        let a = State.shared.currentUser.res1
-        let b = State.shared.currentUser.res2
-        let c = State.shared.currentUser.res3
-        switch a {
+    func updateDetailButtons(val: Int, button: UIButton) {
+        switch val {
         case 0:
-            DateBase1Button.setImage(UIImage(named: "see_details"), for: [])
+            button.setImage(UIImage(named: "see_details"), for: [])
         break
         case 1:
-            DateBase2Button.setImage(UIImage(named:"see_details_gold"), for: [])
+            button.setImage(UIImage(named:"see_details_gold"), for: [])
         break
         case 2:
-            DateBase3Button.setImage(UIImage(named: "nodetails"), for: [])
+            button.setImage(UIImage(named: "nodetails"), for: [])
         break
-        default:
-            print("There was an error")
-        }
-        switch b {
-        case 0:
-            DateBase1Button.setImage(UIImage(named: "see_details"), for: [])
-            break
-        case 1:
-            DateBase2Button.setImage(UIImage(named:"see_details_gold"), for: [])
-            break
-        case 2:
-            DateBase3Button.setImage(UIImage(named: "nodetails"), for: [])
-            break
-        default:
-            print("There was an error")
-        }
-        switch c {
-        case 0:
-            DateBase1Button.setImage(UIImage(named: "see_details"), for: [])
-            break
-        case 1:
-            DateBase2Button.setImage(UIImage(named:"see_details_gold"), for: [])
-            break
-        case 2:
-            DateBase3Button.setImage(UIImage(named: "nodetails"), for: [])
-            break
         default:
             print("There was an error")
         }
