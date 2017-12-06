@@ -13,6 +13,7 @@
 		16D3BC751FD6180E00AAF465 /* userSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3BC741FD6180E00AAF465 /* userSettingsViewController.swift */; };
 		794F4809EC79F298995BC121 /* Pods_checkmateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F22072240561F9A2F2A53A /* Pods_checkmateTests.framework */; };
 		875FA4DA85D5FD5C006EB462 /* Pods_checkmateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */; };
+		BA15DC2E1FD7BFE10037E4B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA15DC2D1FD7BFE10037E4B3 /* GoogleService-Info.plist */; };
 		BEB37C20E05E9599FE6EB964 /* Pods_checkmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CEC460F91C923AFB603D37 /* Pods_checkmate.framework */; };
 		C814F4C01FC525AB00306B42 /* SignUpStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C814F4BE1FC525A700306B42 /* SignUpStep2ViewController.swift */; };
 		C86A332F1FB9662A00352600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A332E1FB9662A00352600 /* AppDelegate.swift */; };
@@ -22,7 +23,6 @@
 		C86A33391FB9662A00352600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86A33371FB9662A00352600 /* LaunchScreen.storyboard */; };
 		C86A33441FB9662A00352600 /* checkmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A33431FB9662A00352600 /* checkmateTests.swift */; };
 		C86A334F1FB9662A00352600 /* checkmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A334E1FB9662A00352600 /* checkmateUITests.swift */; };
-		C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C86A335C1FB9671000352600 /* GoogleService-Info.plist */; };
 		C8ECD2251FCFBA1200063A33 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */; };
 		C8ECD2271FCFBBD900063A33 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */; };
 		C8ECD2291FCFDA5900063A33 /* userProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */; };
@@ -57,6 +57,7 @@
 		57DA2F370B3A8E6A224DA7D0 /* Pods_checkmateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_checkmateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F22072240561F9A2F2A53A /* Pods_checkmateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_checkmateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CEC460F91C923AFB603D37 /* Pods_checkmate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_checkmate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA15DC2D1FD7BFE10037E4B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAC2F656C8034B2B93C08389 /* Pods-checkmateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkmateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-checkmateTests/Pods-checkmateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C814F4BE1FC525A700306B42 /* SignUpStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep2ViewController.swift; sourceTree = "<group>"; };
 		C86A332B1FB9662A00352600 /* checkmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +73,6 @@
 		C86A334A1FB9662A00352600 /* checkmateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checkmateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86A334E1FB9662A00352600 /* checkmateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkmateUITests.swift; sourceTree = "<group>"; };
 		C86A33501FB9662A00352600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C86A335C1FB9671000352600 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8ECD2241FCFBA1200063A33 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C8ECD2261FCFBBD900063A33 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1ViewController.swift; sourceTree = "<group>"; };
 		C8ECD2281FCFDA5900063A33 /* userProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfileViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +175,7 @@
 		C86A33221FB9662A00352600 = {
 			isa = PBXGroup;
 			children = (
+				BA15DC2D1FD7BFE10037E4B3 /* GoogleService-Info.plist */,
 				C86A332D1FB9662A00352600 /* checkmate */,
 				C86A33421FB9662A00352600 /* checkmateTests */,
 				C86A334D1FB9662A00352600 /* checkmateUITests */,
@@ -204,7 +205,6 @@
 				C804A7B11FB9715C00F7DF6D /* View Controller */,
 				C86A33371FB9662A00352600 /* LaunchScreen.storyboard */,
 				C86A333A1FB9662A00352600 /* Info.plist */,
-				C86A335C1FB9671000352600 /* GoogleService-Info.plist */,
 			);
 			path = checkmate;
 			sourceTree = "<group>";
@@ -344,8 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C86A33391FB9662A00352600 /* LaunchScreen.storyboard in Resources */,
+				BA15DC2E1FD7BFE10037E4B3 /* GoogleService-Info.plist in Resources */,
 				C86A33361FB9662A00352600 /* Assets.xcassets in Resources */,
-				C86A335D1FB9671000352600 /* GoogleService-Info.plist in Resources */,
 				C86A33341FB9662A00352600 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,11 +707,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A57T4SW56;
+				DEVELOPMENT_TEAM = B3VZB8Q9FR;
 				INFOPLIST_FILE = checkmate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.checkmate.checkmate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.checkmate.4807568555;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -724,11 +724,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A57T4SW56;
+				DEVELOPMENT_TEAM = B3VZB8Q9FR;
 				INFOPLIST_FILE = checkmate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.checkmate.checkmate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.checkmate.4807568555;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

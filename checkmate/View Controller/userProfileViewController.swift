@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class userProfileViewController: UIViewController {
-    
-    var curProfile: UserProfile?
     
     @IBOutlet weak var userProfileImageView: UIImageView!
     
@@ -40,11 +39,9 @@ class userProfileViewController: UIViewController {
     @IBAction func DMVcheckButtonPressed(_ sender: Any) {
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userProfileImageView.image = State.shared.currentUser.profilePic
 
         // Do any additional setup after loading the view.
     }

@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class UserProfile {
     var First: String
@@ -20,8 +22,12 @@ class UserProfile {
     var res3: Int
     var lastCheckedDate: String
     var searchHistory:[UserProfile]
+    
+    var username: String!
+    var id: String!
 
-
+    let dbRef = Database.database().reference()
+    
     init() {
         self.First = "Hello"
         self.Last = "World"
@@ -33,6 +39,10 @@ class UserProfile {
         self.lastCheckedDate = ""
         self.plan = "basic"
         self.searchHistory = []
+        
+        let currentUser = Auth.auth().currentUser
+        username = currentUser?.displayName
+        id = currentUser?.uid
     }
     
 
@@ -48,6 +58,15 @@ class UserProfile {
         self.searchHistory = []
         self.plan = plan
 
+        let currentUser = Auth.auth().currentUser
+        username = currentUser?.displayName
+        id = currentUser?.uid
+    }
+    
+    func addUsertoDB() {
+        
+        dbRef.child("Users/\(id!)").setValue(["firstName": self.First, "lastName": self.Last, "profilePic": "Images/default_profile_photo", "result1": self.res1, "result2": self.res2, "result3": self.res3, "lastCheckedDate": self.lastCheckedDate, "plan": self.plan, "searchHistory": ""])
+        
     }
     
 }

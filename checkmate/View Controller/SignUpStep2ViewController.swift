@@ -62,6 +62,8 @@ class SignUpStepTwoViewController: UIViewController {
                             guard let lastName = self.lastNameTextField.text else { return }
                             State.shared.currentUser.First = firstName
                             State.shared.currentUser.Last = lastName
+                            State.shared.currentUser.plan = self.planType
+                            State.shared.currentUser.addUsertoDB()
                             self.performSegue(withIdentifier: "signUpToNav", sender: self)
                             
                             

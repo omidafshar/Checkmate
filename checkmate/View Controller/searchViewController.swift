@@ -9,7 +9,7 @@
 import UIKit
 
 class searchViewController: UIViewController {
-    var curProfile: UserProfile?
+//    var curProfile: UserProfile?
     
     @IBOutlet weak var userProfileButton: UIButton!
     
@@ -38,7 +38,7 @@ class searchViewController: UIViewController {
             let destination = segue.destination
             if (identifier == "profileImageToCheck") {
                 let controller = destination as! userProfileViewController
-                controller.curProfile = UserProfile()
+//                controller.curProfile = UserProfile()
             } else if (identifier == "userProfileToUserSettings") {
                 let controller = destination as! userSettingsViewController
 
@@ -46,7 +46,7 @@ class searchViewController: UIViewController {
                 
             } else if (identifier == "userProfileToCheckHistory") {
                 let controller = destination as! checkHistoryViewController
-                controller.profilesChecked = (curProfile?.searchHistory)!
+                controller.profilesChecked = State.shared.currentUser.searchHistory
             } else {
                 print("Invalid Segue. Not matched with any of the segues")
             }
@@ -56,12 +56,21 @@ class searchViewController: UIViewController {
         }
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        let imagePath = "Images/" + State.shared.currentUser.id + "_profile.jpg"
+//        getDataFromPath(path: imagePath, completion: { (data) in
+//            if let data = data {
+//                let image = UIImage(data: data)
+//                State.shared.currentUser.profilePic = image!
+//                self.userProfileButton.setImage(image, for: [])
+//            }
+//        })
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userProfileButton.setImage(State.shared.currentUser.profilePic, for: [])
-        print(5)
-        curProfile = UserProfile()
-        print((curProfile?.First)!)
+//        curProfile = UserProfile()
 
         // Do any additional setup after loading the view.
     }
